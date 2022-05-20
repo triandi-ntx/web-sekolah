@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Light.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background-image: url(../img/bg.png);
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'sans-serif';
+  border-top: 4px solid #175387;
+}
+
+#header {
+  background-color: white;
+}
+
+.logo {
+  overflow: visible;
+}
+
+.pengumuman {
+  padding: 0px 0 0;
+}
+
+#footer {
+  height: 50px;
+  padding: 17px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 4px;
+  padding-top: 50px;
+}
+
+.hold-breadcrumbs {
+  border-bottom: 0.2em solid lightgrey;
+  padding: 15px 0 5px;
+  margin: 0 0 20px;
+}
+
+/* judul-halaman */
+.judul-halaman {
+  background: #0e487a;
+  padding: 33px 0 22px;
+}
+.judul-halaman h1,
+.judul-halaman .title {
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 52px;
+  line-height: 54px;
+  letter-spacing: 1px;
+  margin: 0 0 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 774px) {
+  .judul-halaman {
+    padding: 20px 0 10px;
+  }
+  .judul-halaman h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 0 15px;
+  }
+}
+
+.crewman.crewman-center .sambutan {
+  background: white;
+  font-size: 1em;
+  border-bottom: 0.2em solid grey;
+  border-radius: 0.33em;
+}
+.crewman.crewman-center .sambutan:hover {
+  cursor: pointer;
+  border-bottom: 0.2em solid lightblue;
+}
+
+.blockquote-about .block {
+  background: white;
+  font-size: 1em;
+  border-bottom: 0.2em solid lightgrey;
+  border-radius: 0.33em;
+}
+.blockquote-about .block:hover {
+  cursor: pointer;
+  border-bottom: 0.2em solid green;
+}
+
+.link-penting {
+  text-align: center;
+  background: #5a5a5a;
+}
+
+.link-penting h2 {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.gambar-gerak {
+  margin-top: 60px;
+}
+
+.gambar-gerak .title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.visi-sekolah {
+  background: white;
+  padding: 30px 30px 30px 40px;
+  border-bottom: 0.2em solid grey;
+  border-radius: 0.33em;
+}
+
+.visi-sekolah:hover {
+  border-bottom: 0.2em solid lightblue;
+}
+
+.misi-sekolah {
+  background: white;
+  padding: 30px 30px 30px 40px;
+  border-bottom: 0.2em solid grey;
+  border-radius: 0.33em;
+}
+
+.misi-sekolah:hover {
+  border-bottom: 0.2em solid pink;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.greeting {
+  text-align: center;
+  color: var(--white-base);
+  padding: 100px 20px 140px 20px;
+  letter-spacing: 2px;
+}
+
+.h1-ft {
+  background-color: var(--white-base);
+  color: var(--black-base);
+  padding: 5px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 80px;
+  background-image: linear-gradient(transparent 0%, transparent 90%, #36558f 90%, #36558f 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 1200ms;
+  box-shadow: var(--primary-shadow);
+}
+
+.h1-ft:hover {
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.h1-univ {
+  font-size: 40px;
+}
+
+.welcome {
+  background-color: var(--biru);
+  color: var(--black-base);
+  padding: 70px 20px 20px 20px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  gap: -1;
+}
+
+.tag-content {
+  background-color: var(--biru);
+  padding: 5px;
+  font-size: 10px;
+  color: var(--white-base);
+  width: 90px;
+  text-align: center;
+  box-shadow: var(--primary-shadow);
+}
+
+.left-side {
+  background-color: var(--black-base);
+  color: var(--white-base);
+  padding: 20px;
+  margin: 20px 0px 20px 20px auto;
+  letter-spacing: 2px;
+  width: 300px;
+  height: 500px;
+  box-shadow: var(--primary-shadow);
+  outline: 2px solid var(--black-base);
+}
+
+.left-side:hover {
+  background-color: var(--white-base);
+  color: var(--black-base);
+  outline: 2px solid var(--black-base);
+  transition: 0.4s;
+}
+
+.right-side {
+  background-color: var(--white-base);
+  color: var(--black-base);
+  padding: 20px;
+  letter-spacing: 2px;
+  margin: 0px 20px 20px 0px auto;
+  width: 700px;
+  height: 500px;
+  box-shadow: var(--primary-shadow);
+  outline: 2px solid var(--black-base);
+}
+
+.right-side:hover {
+  background-color: var(--black-base);
+  color: var(--white-base);
+  outline: 2px solid var(--black-base);
+  transition: 0.4s;
+}
+
+.yt-frame {
+  border: 2px solid black;
+  width: 690px;
+  height: 415px;
+}
+
+/* Contact  */
+.section-title h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+.contact-area {
+  /* background: #fbfbfb; */
+  padding: 15px 0 120px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-area .map-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  text-align: center;
+  z-index: -1;
+}
+
+.contact-area .contact-content h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.contact-area .contact-content p {
+  margin-bottom: 35px;
+  padding-right: 30px;
+}
+
+.contact-area .contact-content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contact-area .contact-content h4 a {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-area .contact-form-wrapper form input,
+.contact-area .contact-form-wrapper form textarea {
+  padding: 16px 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #747e88;
+}
+
+.contact-area .contact-form-wrapper form input::-webkit-input-placeholder,
+.contact-area .contact-form-wrapper form textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input:-ms-input-placeholder,
+.contact-area .contact-form-wrapper form textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::-ms-input-placeholder,
+.contact-area .contact-form-wrapper form textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::-webkit-input-placeholder,
+.contact-area .contact-form-wrapper form textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::-moz-placeholder,
+.contact-area .contact-form-wrapper form textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input:-ms-input-placeholder,
+.contact-area .contact-form-wrapper form textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::-ms-input-placeholder,
+.contact-area .contact-form-wrapper form textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::placeholder,
+.contact-area .contact-form-wrapper form textarea::placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input:focus,
+.contact-area .contact-form-wrapper form textarea:focus {
+  border-color: #f2a92c;
+}
+
+.contact-area .contact-form-wrapper form button {
+  padding: 16px 40px;
+  border-radius: 5px;
+}
+input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 16px;
+  padding: 17px 30px;
+  margin-bottom: 20px;
+  color: #868aaa;
+  -webkit-box-shadow: 0px 0px 51px rgba(180, 180, 180, 0.16);
+  box-shadow: 0px 0px 51px rgba(180, 180, 180, 0.16);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  border: 1px solid transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f2a92c;
+}
+/* End Contact  */
